@@ -148,3 +148,4 @@ D:\Proyecto cursos2024\C#\WebApi\ASP.NET Core 6\Modulo 6 - Configuraciones\Fin\W
 D:\Proyecto cursos2024\C#\WebApi\ASP.NET Core 6\Modulo 6 - Configuraciones\Fin\WebAPIAutores\WebAPIAutores\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 D:\Proyecto cursos2024\C#\WebApi\ASP.NET Core 6\Modulo 6 - Configuraciones\Fin\WebAPIAutores\WebAPIAutores\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\Proyecto cursos2024\C#\WebApi\ASP.NET Core 6\Modulo 6 - Configuraciones\Fin\WebAPIAutores\WebAPIAutores\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Proyecto cursos2024\C#\WebApi\ASP.NET Core 6\Modulo 6 - Configuraciones\Fin\WebAPIAutores\WebAPIAutores\obj\Debug\net8.0\WebAPIAutores.sourcelink.json

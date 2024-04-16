@@ -16,6 +16,7 @@ using System.Text;
 using System.Text.Json.Serialization;
 using WebAPIAutores.Filtros;
 using WebAPIAutores.Middlewares;
+using WebAPIAutores.Servicios;
 
 namespace WebAPIAutores
 {
@@ -84,6 +85,16 @@ namespace WebAPIAutores
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
+            services.AddAuthorization(opciones =>
+            {
+                opciones.AddPolicy("EsAdmin", politica => politica.RequireClaim("EsAdmin"));
+            });
+            services.AddCors(opciones => opciones.AddDefaultPolicy(builder =>
+            {
+                builder.WithOrigins("").AllowAnyMethod().AllowAnyHeader();
+            }));
+            services.AddDataProtection();
+            services.AddTransient<HashService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -103,6 +114,7 @@ namespace WebAPIAutores
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseCors();
 
             app.UseAuthorization();
 
